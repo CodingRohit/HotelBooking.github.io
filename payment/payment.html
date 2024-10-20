@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Choose Payment Method</h2>
+        <button onclick="payOnline()">Pay Online</button>
+        <button onclick="payOffline()">Pay with Cash</button>
+        <div id="qr-scanner" class="qr-scanner">
+            <h3>Scan QR Code</h3>
+            <video id="preview"></video>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
